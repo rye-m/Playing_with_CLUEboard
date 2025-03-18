@@ -16,8 +16,8 @@
 
 2. Photo/video
    
-   ![windmil_1](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_1/windmil_1.jpeg)
-   ![windmil_2](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_1/windmil_2.jpeg)
+   ![windmil_1](../assignment_1/windmil_1.jpeg)
+   ![windmil_2](../assignment_1/windmil_2.jpeg)
 
 3. Code
    the whole code ```main.cpp``` is in the ```src``` directory

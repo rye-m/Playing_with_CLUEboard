@@ -1,47 +1,33 @@
 #include "Adafruit_Arcada.h"
+
 Adafruit_Arcada arcada;
 
-void setup(void) {
-  Serial.begin(9600);
-  Serial.print("Hello! Arcada TFT Test");
+#define NUM_SELECTIONS 3
+const char *selection[NUM_SELECTIONS] = {"Apples", "Bananas", "Pears"};
 
-  // Start TFT and fill black
+void setup() {
+  //while (!Serial) delay(10);
+
+  Serial.println("Hello! Arcada Menu test");
   if (!arcada.arcadaBegin()) {
     Serial.print("Failed to begin");
-    while (1) delay(10);
+    while (1);
   }
   arcada.displayBegin();
-  
-  // Turn on backlight
-  arcada.setBacklight(255); 
+  Serial.println("Arcada display begin");
+  arcada.setBacklight(255);
 }
+
 
 void loop() {
   arcada.display->fillScreen(ARCADA_RED);
-#if defined(ADAFRUIT_MONSTER_M4SK_EXPRESS)
-  arcada.display2->fillScreen(ARCADA_RED);
-#endif
+  uint8_t selected = arcada.menu(selection, NUM_SELECTIONS, ARCADA_WHITE, ARCADA_BLACK);
 
-  delay(100);
-
-  arcada.display->fillScreen(ARCADA_GREEN);
-#if defined(ADAFRUIT_MONSTER_M4SK_EXPRESS)
-  arcada.display2->fillScreen(ARCADA_GREEN);
-#endif
-
-  delay(100);
-
+  char message[80];
+  sprintf(message, "Selected '%s'", selection[selected]);
   arcada.display->fillScreen(ARCADA_BLUE);
-#if defined(ADAFRUIT_MONSTER_M4SK_EXPRESS)
-  arcada.display2->fillScreen(ARCADA_BLUE);
-#endif
-
-  delay(100);
-
-  arcada.display->fillScreen(ARCADA_BLACK);
-#if defined(ADAFRUIT_MONSTER_M4SK_EXPRESS)
-  arcada.display2->fillScreen(ARCADA_BLACK);
-#endif
-
-  delay(100);
+  arcada.infoBox(message);
 }
+
+
+/*****************************************************************/
