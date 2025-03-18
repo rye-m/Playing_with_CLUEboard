@@ -16,10 +16,10 @@ Goals: What are the goals of the player(s)?-> make the atmosphere more fun, casu
 
    
 2. Storyboards:
-   ![storyboard](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_2/IMG_6143.JPG)
+   ![storyboard](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_2/IMG_6143_cmp.JPG)
    
 3. Photo of the device and video of the interaction: Document both the device and the interaction: at a minimum, your video should show one partner interacting with the device and showing some of the interactions from the storyboards. You may also want to show the wizard interface driving the device, if you have done anything particularly interesting or unique with it.
 
-   ![part_1](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_2/IMG_6144.JPG)
+   ![part_1](/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/assignment_2/IMG_6144_cmp.JPG)
 
 
