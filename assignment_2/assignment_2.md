@@ -20,6 +20,6 @@ Goals: What are the goals of the player(s)?-> make the atmosphere more fun, casu
    
 3. Photo of the device and video of the interaction: Document both the device and the interaction: at a minimum, your video should show one partner interacting with the device and showing some of the interactions from the storyboards. You may also want to show the wizard interface driving the device, if you have done anything particularly interesting or unique with it.
 
-   ![part_1](../assignment_2/IMG_6144_cmp.JPG)
-
+   ![part_2](../assignment_2/IMG_6144_cmp.JPG)
+   ![part_3](../assignment_2/LD_image.jpeg)
 
