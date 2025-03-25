@@ -1,0 +1,1 @@
+CLUE wearable case by adafruit on Thingiverse: https://www.thingiverse.com/thing:4170087

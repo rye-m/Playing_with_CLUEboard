@@ -10,6 +10,15 @@ The written proposal will define your group’s plan to design and/or evaluate a
 2. **How**: How are you planning to solve the problem? Please do a small literature review to summarize the state-of-the-art solutions or studies that have been proposed or conducted by other researchers or companies in this area, and then present your logic and arguments to show that your solution could be a better solution.
    
 3. **Technical Details**: What are the specific challenges you plan to tackle and how? Give the most important technical details. For example: What sensors are you going to use? What techniques are you going to use to gain insights from the data? What wearable or ubiquitous computing platforms are you going to build on?
+
+- ESP32 with camera: 
+
+
+
+
+
+
+
    
 4. **Evaluation Plan**: Your project will have to be useful for an audience beyond just you. Include a plan for how you will put it in front of others and evaluate or measure its success. Who are your users, and how will you find them? What data will you collect, and for how long? What will you measure from the data you collect, and how will you evaluate the performance of the system (e.g., accuracy, precision, recall, …)? How will you evaluate the effectiveness of the technology in the real world (e.g., wearability, ease of use, adoption by users, potential for long-term impact)?
    
