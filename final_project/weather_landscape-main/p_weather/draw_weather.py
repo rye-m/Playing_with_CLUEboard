@@ -105,7 +105,7 @@ class DrawWeather():
         yclouds = int(ypos-self.YSTEP/2)
         f.Print()
 
-        self.sprite.Draw("house",0,xpos,oldy) 
+        self.sprite.Draw("bike",1,xpos,oldy) 
         
        
         # convert pressure to smoke angle 
@@ -190,7 +190,7 @@ class DrawWeather():
 
             if (tf<=t_sunset) and (tf+dt>t_sunset):
                 dx = self.TimeDiffToPixels(t_sunset-tf)  - self.XSTEP/2
-                self.sprite.Draw("moon",0,xpos+dx,ymoon)
+                self.sprite.Draw("moon",1,xpos+dx,ymoon)
                 objcounter+=1
                 if (objcounter==2):
                     break;

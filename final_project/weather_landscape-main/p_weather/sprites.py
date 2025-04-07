@@ -24,7 +24,7 @@ class Sprites():
     def __init__(self,spritesdir,canvas):
         self.img = canvas
         self.pix = self.img.load()
-        self.dir = spritesdir
+        self.dir = "/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/final_project/weather_landscape-main/p_weather/sprite"
         self.ext = self.EXT
         self.w, self.h = self.img.size
 
@@ -341,7 +341,7 @@ if __name__ == "__main__":
     s = Sprites('../sprite',img)
     
     
-    s.Draw("house",0,100,100)
+    s.Draw("bike",1,100,100)
     
     img.save("../tmp/sprites_test.bmp")
     
