@@ -267,9 +267,9 @@ class OpenWeatherMap():
         return (not os.path.isfile(filename)) or ( (time.time() - os.stat(filename).st_mtime) > self.FILETOOOLD_SEC )
 
     def FromAuto(self):
-        if (self.IsFileTooOld(self.filename_forecast) or self.IsFileTooOld(self.filename_curr)):
-            print("Using WWW")
-            return self.FromWWW()
+        # if (self.IsFileTooOld(self.filename_forecast) or self.IsFileTooOld(self.filename_curr)):
+        #     print("Using WWW")
+        #     return self.FromWWW()
        
         print("Using Cache '%s','%s'" % (self.filename_curr,self.filename_forecast))
         return self.FromFile()
