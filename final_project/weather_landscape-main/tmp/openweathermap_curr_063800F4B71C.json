@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -73.9557,
+        "lat": 40.7552
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 12.948671271225300,
+        "feels_like": 272.42,
+        "temp_min": 12.948671271225300,
+        "temp_max": 12.948671271225300,
+        "pressure": 1006,
+        "humidity": 37,
+        "sea_level": 1006,
+        "grnd_level": 1004
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 12.35,
+        "deg": 200,
+        "gust": 16.98
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1744126862,
+    "sys": {
+        "type": 2,
+        "id": 2090253,
+        "country": "US",
+        "sunrise": 1744108044,
+        "sunset": 1744154841
+    },
+    "timezone": -14400,
+    "id": 6332485,
+    "name": "Queensbridge Houses",
+    "cod": 200
+}
