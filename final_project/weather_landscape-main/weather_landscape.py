@@ -17,11 +17,12 @@ import secrets
 class WeatherLandscape:
 
     TMP_DIR = "tmp"
-    OUT_FILENAME = "test_"
+    OUT_FILENAME = "output/test_"
     OUT_FILEEXT = ".bmp"
     TEMPLATE_FILENAME = "/Users/ryem/Desktop/Cornell_Tech/fun/Playing_with_CLUEboard/final_project/weather_landscape-main/p_weather/template.bmp"
     SPRITES_DIR="p_weather/sprite"
     DRAWOFFSET = 65
+    bmp_index_WeatherLandscape = 0
 
 
     def __init__(self):
@@ -49,10 +50,11 @@ class WeatherLandscape:
 
 
 
-    def SaveImage(self)->str:
-        img = self.MakeImage() 
+    def SaveImage(self, bmp_index)->str:
+        self.bmp_index_WeatherLandscape = bmp_index
+        img = self.MakeImage()
         placekey = OpenWeatherMap.MakePlaceKey(secrets.OWM_LAT,secrets.OWM_LON)
-        outfilepath = self.TmpFilePath(self.OUT_FILENAME+placekey+self.OUT_FILEEXT)
+        outfilepath = self.TmpFilePath(self.OUT_FILENAME+bmp_index+self.OUT_FILEEXT)
         img.save(outfilepath) 
         return outfilepath
         

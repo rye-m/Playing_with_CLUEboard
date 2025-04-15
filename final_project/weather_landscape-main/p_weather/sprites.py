@@ -7,11 +7,11 @@ class Sprites():
 
     DISABLED = -999999
 
-    Black = 0
-    White = 1
+    Black = 0 # some wierd stuff are happening here
+    White = 1 # some wierd stuff are happening here
 
-    BLACK=0
-    WHITE=1
+    BLACK=1 # some wierd stuff are happening here, black should be 0 and white should be 1
+    WHITE=0
     RED  =2
     TRANS=3
 

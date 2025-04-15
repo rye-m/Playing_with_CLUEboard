@@ -20,6 +20,20 @@ Goals: What are the goals of the player(s)?-> make the atmosphere more fun, casu
    
 3. Photo of the device and video of the interaction: Document both the device and the interaction: at a minimum, your video should show one partner interacting with the device and showing some of the interactions from the storyboards. You may also want to show the wizard interface driving the device, if you have done anything particularly interesting or unique with it.
 
-   ![part_2](../assignment_2/IMG_6144_cmp.JPG)
-   ![part_3](../assignment_2/LD_image.jpeg)
+**Hardware**
+This is the device "The Lie Ditector". It is made with cardboard and I spray-painted it into Black. There are 3 parts on top of this box:
+- The monitor: This is a [Clue Board](https://www.adafruit.com/product/4500). The Li-battery located inside box is connected.
+- Touch sensor (Left and Right): this is where a user put their finger on. This is originally a part of the [physical lie ditector](https://www.elekit.co.jp/product/TK-724R)---the eletronics kit for bigginer. I only use the touch sensor as a WoZ part, nothing is working in this sensor.
 
+![inside of the box](../assignment_2/IMG_6541.JPG)
+![kit_1](../assignment_2/TK-724R%20Product%20Thumbnail.jpg)
+![kit_2](../assignment_2/TK-724R%20Parts%20Thumbnail.png)
+
+**Software**
+I borrowed the code from [PyLeap CLUE Sensor Plotter](https://learn.adafruit.com/pyleap-clue-sensor-plotter). I use humidity sensor for display the plot. If you press the button on the app, you can controll the plot.
+
+![kit_2](../assignment_2/IMG_6543.PNG) ![kit_2](../assignment_2/IMG_6542.PNG)
+
+
+![part_2](../assignment_2/IMG_6144_cmp.JPG)
+![part_3](../assignment_2/LD_image.jpeg)

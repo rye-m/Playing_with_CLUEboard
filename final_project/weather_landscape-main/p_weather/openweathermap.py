@@ -64,7 +64,7 @@ class WeatherInfo():
 
 
     def toCelsius(self,kelvin:float)->float:
-        return kelvin - self.KTOC
+        return kelvin # - self.KTOC
         
     def toFahrenheit(self,kelvin:float)->float:
         return (kelvin - self.KTOC) * 1.8 + 32
@@ -218,11 +218,11 @@ class OpenWeatherMap():
 
 
 
-    def GetTempRange(self,maxtime):
+    def GetAltitudeRange(self,maxtime):
         if len(self.f)==0:
             return None
-        tmax = -999
-        tmin = 999
+        amax = -999
+        amin = 999
         isfirst = True
         for f in self.f:
             if (isfirst):
@@ -230,11 +230,11 @@ class OpenWeatherMap():
                 continue
             if (f.t>maxtime):
                 break
-            if (f.temp>tmax):
-                tmax = f.temp
-            if (f.temp<tmin):
-                tmin = f.temp
-        return (tmin,tmax)
+            if (f.temp>amax):
+                amax = f.temp
+            if (f.temp<amin):
+                amin = f.temp
+        return (amin,amax)
 
 
     def FromJSON(self,data_curr,data_fcst):

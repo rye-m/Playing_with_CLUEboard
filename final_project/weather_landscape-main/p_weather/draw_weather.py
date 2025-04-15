@@ -53,7 +53,7 @@ class DrawWeather():
 
 
     def DegToPix(self,t):
-        n = (t - self.tmin)/self.degreeperpixel
+        n = (t - self.amin)/self.degreeperpixel
         y = self.ypos+self.YSTEP - int(n)
         return y
 
@@ -86,14 +86,14 @@ class DrawWeather():
         nforecasrt = ( (self.picwidth-self.XSTART)/self.XSTEP ) 
         maxtime = datetime.datetime.now() + datetime.timedelta(hours=WeatherInfo.FORECAST_PERIOD_HOURS*nforecasrt)
 
-        (self.tmin,self.tmax) = owm.GetTempRange(maxtime)
-        self.temprange = self.tmax-self.tmin
-        if ( self.temprange < self.YSTEP ):
+        (self.amin,self.amax) = owm.GetAltitudeRange(maxtime)
+        self.altituderange = self.amax-self.amin
+        if ( self.altituderange < self.YSTEP ):
             self.degreeperpixel = self.DEFAULT_DEGREE_PER_PIXEL
         else:
-            self.degreeperpixel = self.temprange/float(self.YSTEP)
+            self.degreeperpixel = self.altituderange/float(self.YSTEP)
         
-        #print("tmin = %f , tmax = %f, range=%f" % (self.tmin,self.tmax,self.temprange))
+        #print("amin = %f , amax = %f, range=%f" % (self.amin,self.amax,self.altituderange))
 
         xpos=0
         tline = [0]*(self.picwidth+self.XSTEP*2)
@@ -214,8 +214,8 @@ class DrawWeather():
         
 
  
-        istminprinted = False
-        istmaxprinted = False
+        isaminprinted = False
+        isamaxprinted = False
         tf = t 
         xpos = self.XSTART
         n = int( (self.XSTEP-self.XFLAT)/2 )
@@ -232,13 +232,13 @@ class DrawWeather():
             
             yclouds = int( ypos-self.YSTEP/2 )
             
-            if (f.temp==self.tmin) and (not istminprinted):
+            if (f.temp==self.amin) and (not isaminprinted):
                 self.DrawTemperature(f,xpos+n,tline0[xpos+n])
-                istminprinted = True
+                isaminprinted = True
             
-            if (f.temp==self.tmax) and (not istmaxprinted):
+            if (f.temp==self.amax) and (not isamaxprinted):
                 self.DrawTemperature(f,xpos+n,tline0[xpos+n])
-                istmaxprinted = True
+                isamaxprinted = True
 
 
             # todo: apply sprite line width 
