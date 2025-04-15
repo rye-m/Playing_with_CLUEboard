@@ -40,3 +40,6 @@ I borrowed the code from [PyLeap CLUE Sensor Plotter](https://learn.adafruit.com
 
 ![part_2](../assignment_2/IMG_6144_cmp.JPG)
 ![part_3](../assignment_2/LD_image.jpeg)
+
+
+![video](../assignment_2/IMG_0060.gif)
