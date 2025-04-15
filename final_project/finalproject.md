@@ -10,15 +10,6 @@ The written proposal will define your group’s plan to design and/or evaluate a
 2. **How**: How are you planning to solve the problem? Please do a small literature review to summarize the state-of-the-art solutions or studies that have been proposed or conducted by other researchers or companies in this area, and then present your logic and arguments to show that your solution could be a better solution.
    
 3. **Technical Details**: What are the specific challenges you plan to tackle and how? Give the most important technical details. For example: What sensors are you going to use? What techniques are you going to use to gain insights from the data? What wearable or ubiquitous computing platforms are you going to build on?
-
-- ESP32 with camera: 
-
-
-
-
-
-
-
    
 4. **Evaluation Plan**: Your project will have to be useful for an audience beyond just you. Include a plan for how you will put it in front of others and evaluate or measure its success. Who are your users, and how will you find them? What data will you collect, and for how long? What will you measure from the data you collect, and how will you evaluate the performance of the system (e.g., accuracy, precision, recall, …)? How will you evaluate the effectiveness of the technology in the real world (e.g., wearability, ease of use, adoption by users, potential for long-term impact)?
    
@@ -37,3 +28,23 @@ Every good project can provide convincing responses to Heilmeier’s Catechism w
 - What are the midterm and final "exams" to check for success?
 
 **Format**: Please try to be as concise as possible. Please try to limit the project proposal to 2 pages (without references). 
+
+
+
+
+**Pitch**
+Hi! I'm planning to create a **bike trip summarizer!**
+- This device will **monitor GPS, speed, temperature, how shaky it was, and photos** during your ride and, based on this data, will **summarize your entire trip** and generate a poetic sentence, like for a blog or dairy.
+- Additionally, the device is **connected to a button on the handlebar**, which allows you to **mark highlight moments** of your ride (similar to a camera shutter button).
+- So, the **input** will include GPS data, temperature, speed, and the highlight-marking button(camera), and the **output** will be a generated text summary.
+- I **borrowed some inspiration from the "Poetry Camera"** obviously, but my research focuses on **micromobility**—how people use it and what we can do to make it **safer and more user-friendly**. One key trait from our study was **how dangerous it is to use a phone while riding**.
+- So, instead of **taking photos with a phone during a ride**, I propose **installing a single button on the handlebar** that is **easily accessible**, along with a system that **automatically summarizes your bike trip!** 🚴✨
+
+
+- Using camera might be useful to capture the moment
+- Microcontroller board might be better for power consumption
+- CLUE board, ESP32 with a camera! -> adafruit memento
+- https://github.com/lds133/weather_landscape?tab=readme-ov-file
+
+
+![output for now](../final_project/weather_landscape-main/tmp/output/test_output.gif)

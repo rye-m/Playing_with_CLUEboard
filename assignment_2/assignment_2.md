@@ -37,7 +37,6 @@ I borrowed the code from [PyLeap CLUE Sensor Plotter](https://learn.adafruit.com
 <img src="../assignment_2/IMG_6542.PNG" alt="kit_2" width="200"/>
 </p>
 
-<p float="left">
+
 ![part_2](../assignment_2/IMG_6144_cmp.JPG)
 ![part_3](../assignment_2/LD_image.jpeg)
-</p>
