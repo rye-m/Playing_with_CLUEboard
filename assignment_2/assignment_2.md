@@ -32,8 +32,12 @@ This is the device "The Lie Ditector". It is made with cardboard and I spray-pai
 **Software**
 I borrowed the code from [PyLeap CLUE Sensor Plotter](https://learn.adafruit.com/pyleap-clue-sensor-plotter). I use humidity sensor for display the plot. If you press the button on the app, you can controll the plot.
 
-<img src="../assignment_2/IMG_6543.PNG" alt="kit_2" width="100"/>
-<img src="../assignment_2/IMG_6542.PNG" alt="kit_2" width="100"/>
+<p float="left">
+<img src="../assignment_2/IMG_6543.PNG" alt="kit_2" width="200"/>
+<img src="../assignment_2/IMG_6542.PNG" alt="kit_2" width="200"/>
+</p>
 
+<p float="left">
 ![part_2](../assignment_2/IMG_6144_cmp.JPG)
 ![part_3](../assignment_2/LD_image.jpeg)
+</p>
