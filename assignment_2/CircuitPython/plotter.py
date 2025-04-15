@@ -137,9 +137,9 @@ class Plotter:
         style="lines",
         mode="scroll",
         scale_mode=None,
-        screen_width=240,
+        screen_width=200,
         screen_height=240,
-        plot_width=128,
+        plot_width=148,
         plot_height=100,
         x_divs=4,
         y_divs=4,
@@ -906,4 +906,3 @@ class Plotter:
     @y_range_lock.setter
     def y_range_lock(self, value):
         self._plot_range_lock = value
-

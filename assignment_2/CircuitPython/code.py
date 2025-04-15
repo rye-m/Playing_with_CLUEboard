@@ -328,7 +328,7 @@ while True:
             plotter.data_add(all_data + all_data_base)
 
         # An occasional print of free heap
-        if debug >= 3 and count % 15 == 0:
+        if debug >= 3 : #and count % 3 == 0:
             gc.collect()  # must collect() first to measure free memory
             print("Free memory:", gc.mem_free())
 

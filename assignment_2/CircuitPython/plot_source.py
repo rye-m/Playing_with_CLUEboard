@@ -380,4 +380,3 @@ class MagnetometerPlotSource(PlotSource):
 
     def data(self):
         return self._clue.magnetic
-
